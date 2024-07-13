@@ -2,7 +2,7 @@
 use App\Http\Controllers\Siswa\StudentController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', [StudentController::class, 'index'])->name('home');
+Route::get('/', [StudentController::class, 'index'])->name('home');
 Route::post('/siswa/tambah', [StudentController::class, 'store'])->name('siswa.tambah');
 Route::post('/siswa/store', [StudentController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/edit/{id}', [StudentController::class, 'edit'])->name('siswa.edit');

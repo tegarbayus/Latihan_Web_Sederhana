@@ -8,7 +8,7 @@ return new class extends Migration
 {
     /**
     *    Run the migrations.
-     */
+    */
     public function up(): void
     {
         Schema::create('student', function (Blueprint $table) {
@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("nama");
             $table->string("ttl");
             $table->string("sekolah");
-            $table->string("keterangan") ->nullable();
+            $table->string("keterangan")->nullable();
             $table->timestamps();
         });
     }
